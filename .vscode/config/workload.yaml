@@ -1,0 +1,13 @@
+apiVersion: carto.run/v1alpha
+kind: workload
+metadata:
+  name: dotnetapp
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: dotnetapp
+spec:
+  source:
+    git:
+      url: https://github.com/BrianRagazzi/dotnetapp
+      ref:
+        branch: main
